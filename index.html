@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript 桌上冰球遊戲</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- 觸控控制按鈕 -->
+    <div class="touch-controls">
+      <div class="movement-controls">
+        <div class="direction-pad">
+          <button id="btn-up" class="control-btn direction-btn">↑</button>
+          <div class="horizontal-btns">
+            <button id="btn-left" class="control-btn direction-btn">←</button>
+            <button id="btn-down" class="control-btn direction-btn">↓</button>
+            <button id="btn-right" class="control-btn direction-btn">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 重新開始按鈕（遊戲結束時使用） -->
+    <button id="btn-restart" class="restart-btn" style="display: none;">重新開始</button>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
